@@ -8,11 +8,11 @@
     "python.formatting.provider": "ms-python.black-formatter",
     "python.analysis.autoSearchPaths": true,
     "python.autoComplete.extraPaths": [
-        "/usr/lib/python3.10/site-packages",
-        "/usr/lib/python3.10/"
+        "/usr/lib/python3.11/site-packages",
+        "/usr/lib/python3.11/"
     ],
     "python.analysis.extraPaths": [
-        "/usr/lib/python3.10/site-packages",
-        "/usr/lib/python3.10/"
+        "/usr/lib/python3.11/site-packages",
+        "/usr/lib/python3.11/"
     ]
 }

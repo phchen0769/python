@@ -39,14 +39,14 @@
 	// "forwardPorts": [
 	// 	8000
 	// ],
-	"runArgs": [
-		"-p",
-		"8000:8000",
-		"-it",
-		"--rm",
-		"-e",
-		"DOCKER_HOST=0.0.0.0"
-	], // 使用 0.0.0.0 解除绑定
+	// "runArgs": [
+	// 	"-p",
+	// 	"8000:8000",
+	// 	"-it",
+	// 	"--rm",
+	// 	"-e",
+	// 	"DOCKER_HOST=0.0.0.0"
+	// ], // 使用 0.0.0.0 解除绑定
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// pip3 升级、设置清华源、安装requirements.txt中的依赖包
 	// "postCreateCommand": "pip3 install --upgrade pip && pip3 config set global.index-url https:\/\/pypi.tuna.tsinghua.edu.cn\/simple",
