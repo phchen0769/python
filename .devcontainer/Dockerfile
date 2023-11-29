@@ -14,6 +14,8 @@ RUN apk add python3 \
 	g++ \
 	py3-pip
 
+RUN pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+
 RUN pip3 install --no-cache-dir -r /root/requirements.txt
 
 # 添加/root/.local/bin目录到环境变量

@@ -1,4 +1,1 @@
-numpy
-sympy
-scipy
-matplotlib
+pandas
