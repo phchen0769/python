@@ -1,0 +1,7 @@
+Number of men and women on the ship: 577 314
+Percentage of passengers who survived: 38.38
+Percentage of first class passengers: 24.24
+Average age of passengers: 29.70
+Median age of passengers: 28.00
+Pearson correlation between SibSp and Parch: 0.41
+The most popular female name on the ship: Miss.
