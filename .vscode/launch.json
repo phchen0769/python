@@ -5,12 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: 当前文件",
+            "name": "Python: Streamlit",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true
+            // "program": "${file}",
+            // "console": "integratedTerminal",
+            "program": "/home/vscode/.local/bin/streamlit",
+            "args": [
+                "run",
+                "auth.py",
+                // "${file}",
+                "--server.port",
+                "8888"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceRoot}"
+            },
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

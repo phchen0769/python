@@ -1,35 +1,12 @@
-FROM alpine:latest
+FROM mcr.microsoft.com/devcontainers/python:0-3.11
 
 LABEL MAINTAINER = "Fedorov"
 
-# 替换apk使用的源
-COPY repositories /etc/apk/repositories
 COPY requirements.txt /root/requirements.txt
 
-# Install required packages and remove the apt packages cache when done.
-# RUN apk update 
-RUN apk add python3 \
-	python3-dev \
-	gcc \
-	g++ \
-	py3-pip
+RUN pip3 install --upgrade pip && pip3 config set global.index-url https:\/\/pypi.tuna.tsinghua.edu.cn\/simple
+RUN pip3 install -r /root/requirements.txt
 
-RUN pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+EXPOSE 8899
 
-RUN pip3 install --no-cache-dir -r /root/requirements.txt
-
-# 添加/root/.local/bin目录到环境变量
-# ENV PATH="/root/.local/bin:${PATH}"
-
-# RUN  rm -r /root/.cache
-
-# copy all the configfiles
-# COPY default.conf /etc/nginx/http.d/default.conf
-# COPY yuejuan.ini /etc/supervisor.d/
-# xadmin针对python3.10的cache源文件修改
-# COPY cache.py /usr/lib/python3.10/site-packages/django/views/decorators/cache.py
-
-# EXPOSE 8080
-
-# CMD ["supervisord", "-n", "-c", "/etc/supervisord.conf"]
-CMD [ "pip list" ]
+CMD ["streamlit", "run", "auth.py", "--server.port 8899"]

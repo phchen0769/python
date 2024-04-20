@@ -1,7 +1,6 @@
-numpy
-sympy
-scipy
-matplotlib
+openpyxl
 pandas
-seaborn
-scikit-learn
+streamlit
+sqlalchemy
+streamlit-aggrid
+streamlit_authenticator
