@@ -5,26 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File (Integrated Terminal)",
-            "type": "python",
+            "name": "Python: LocalFile",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal",
-        },
-        {
-            "name": "python: streamlit",
-            "type": "python",
-            "request": "launch",
-            "console": "integratedTerminal",
-            "program": "/home/vscode/.local/bin/streamlit",
             "args": [
-                "run",
-                "auth.py",
-                "--server.port",
-                "8888"
+                // "runserver",
+                // "0.0.0.0:8000"
+                // "--noreload",
             ],
+            // "django": true,
+            "justMyCode": true,
             "env": {
-                "PYTHONPATH": "/usr/lib/python3.9/"
+                "PYTHONPATH": "${workspaceRoot}"
             },
             "envFile": "${workspaceFolder}/.env"
         }
