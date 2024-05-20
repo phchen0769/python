@@ -1,8 +1,8 @@
 import random
 
 # 参数设定
-POP_SIZE = 51  # 种群大小
-NUM_GENERATIONS = 501  # 迭代代数
+POP_SIZE = 50  # 种群大小
+NUM_GENERATIONS = 500  # 迭代代数
 MUTATION_RATE = 0.1  # 变异概率
 CROSSOVER_RATE = 0.7  # 交叉概率
 
