@@ -2,7 +2,7 @@ import random
 
 # 参数设定
 POP_SIZE = 50  # 种群大小
-NUM_GENERATIONS = 500  # 迭代代数
+NUM_GENERATIONS = 10  # 迭代代数
 MUTATION_RATE = 0.1  # 变异概率
 CROSSOVER_RATE = 0.7  # 交叉概率
 
@@ -120,5 +120,5 @@ if __name__ == "__main__":
         # 找到并打印最终的最佳解
         best_individual = max(population, key=lambda ind: fitness(ind, expression_str))
         print(
-            f"Best individual: {best_individual} with fitness: {fitness(best_individual, expression_str)}"
+            f"Function:{expression_str},best individual: {best_individual} with fitness: {fitness(best_individual, expression_str)}"
         )
