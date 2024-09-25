@@ -27,7 +27,8 @@
 				"ms-python.python",
 				"ms-python.vscode-pylance",
 				"ms-python.black-formatter",
-				"BenjaminBenais.copilot-theme"
+				"BenjaminBenais.copilot-theme",
+				"Codeium.codeium"
 			]
 		}
 	},
@@ -52,6 +53,8 @@
 	// pip3 升级、设置清华源、安装requirements.txt中的依赖包
 	// "postCreateCommand": "pip3 install --upgrade pip && pip3 config set global.index-url https:\/\/pypi.tuna.tsinghua.edu.cn\/simple",
 	// "postCreateCommand": "ln -s /usr/lib/python3.11  /workspaces/yuejuan_drf/python3.11 && ln -s /usr/lib/python3.11/site-packages /workspaces/yuejuan_drf/site-packages",
+	// "postCreateCommand": "cp /workspaces/python/language_server_linux_x64 /root/.vscode-server/extensions/codeium.codeium-1.16.18/dist/ca80eb7f62095935075d58a4fb83a011f628e365",
+	// "postCreateCommand": "sleep 10 && [ -d /root/.vscode-server/extensions/codeium.codeium-1.16.18/dist/ ] && dist_dir=$(find /root/.vscode-server/extensions/codeium.codeium-1.16.18/dist/ -type d | grep -E '/[a-z0-9]{40}$') && cp /workspaces/python/language_server_linux_x64 $dist_dir || echo 'dist directory not found, skipping copy'",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "root"
 }

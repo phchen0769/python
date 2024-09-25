@@ -41,3 +41,5 @@ print(
 )
 print(f"数学平均成绩：{math_sum / len(student_name_list)}")
 print(f"英语平均成绩：{english_sum / len(student_name_list)}")
+
+print()
