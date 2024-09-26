@@ -37,9 +37,11 @@ RUN pip3 install --no-cache-dir -r /root/requirements.txt
 # ENV DJANGO_SETTINGS_MODULE=remote_diagnosis_drf.settings
 ENV PYTHONPATH=/workspaces/python:$PYTHONPATH
 # 设置 HTTP 和 HTTPS 代理
-ENV HTTP_PROXY=http://10.165.27.210:7890
-ENV HTTPS_PROXY=http://10.165.27.210:7890
-ENV NO_PROXY=localhost,127.0.0.1
+# ENV HTTP_PROXY=http://10.165.27.210:7890
+# ENV HTTPS_PROXY=http://10.165.27.210:7890
+# ENV HTTP_PROXY=http://192.168.12.166:7890
+# ENV HTTPS_PROXY=http://192.168.12.166:7890
+# ENV NO_PROXY=localhost,127.0.0.1
 
 # RUN  rm -r /root/.cache
 

@@ -28,7 +28,7 @@
 				"ms-python.vscode-pylance",
 				"ms-python.black-formatter",
 				"BenjaminBenais.copilot-theme",
-				"Codeium.codeium"
+				"meteorstudio.cursorcode"
 			]
 		}
 	},
